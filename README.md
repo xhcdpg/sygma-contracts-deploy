@@ -6,7 +6,7 @@
 
 ## 部署
 
-部署代码在`deployAccessControl.js`和`deployBridge.js`中。
+部署代码在`ignition/modules/deployAccessControl.js`和`ignition/modules/deployBridge.js`中。
 
 ### 部署`AccessControlSegregator`
 
