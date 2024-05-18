@@ -1,4 +1,4 @@
-# Sygma Contracts
+# Sygma Contracts Deploy
 
 ## 配置
 
@@ -6,7 +6,7 @@
 
 ## 部署
 
-在`ignition/modules`中创建一个`.js文`件，在该文件中写部署代码。部署代码在`deployAccessControl.js`和`deployBridge.js`中。
+部署代码在`deployAccessControl.js`和`deployBridge.js`中。
 
 ### 部署`AccessControlSegregator`
 
