@@ -1,0 +1,68 @@
+# Sygma Contracts
+
+## 配置
+
+在`hardhat.config.js`的`networks`中配置链信息
+
+## 部署
+
+在`ignition/modules`中创建一个`.js文`件，在该文件中写部署代码。部署代码在`deployAccessControl.js`和`deployBridge.js`中。
+
+### 部署`AccessControlSegregator`
+
+由于Bridge需要一个实现了`IAccessControlSegregator`接口的地址作为参数，即`contracts/utils/AccessControlSegregator.sol`
+
+运行如下命令：
+
+```
+npx hardhat ignition deploy ./ignition/modules/deployAccessControl.js --network findora
+```
+
+运行结果：
+
+```
+✔ Confirm deploy to network findora (2152)? … yes
+Hardhat Ignition 🚀
+
+Resuming existing deployment from ./ignition/deployments/chain-2152
+
+Deploying [ AccessModule ]
+
+Batch #1
+  Executed AccessModule#AccessControlSegregator
+
+[ AccessModule ] successfully deployed 🚀
+
+Deployed Addresses
+
+AccessModule#AccessControlSegregator - 0x9f47daF2343f4329e109dEa0a19E546dD3f2f243
+```
+
+### 部署`Bridge
+
+将上一步结果中的地址`0x9f47daF2343f4329e109dEa0a19E546dD3f2f243`作为`deployBridge.js`中的参数。
+
+运行如下命令：
+
+```
+npx hardhat ignition deploy ./ignition/modules/deployBridge.js --network findora
+```
+
+运行结果：
+
+```
+✔ Confirm deploy to network findora (2152)? … yes
+Hardhat Ignition 🚀
+
+Deploying [ BridgeModule ]
+
+Batch #1
+  Executed BridgeModule#Bridge
+
+[ BridgeModule ] successfully deployed 🚀
+
+Deployed Addresses
+
+BridgeModule#Bridge - 0x931E19a34ec59255fbcc3bdD0C3F3b963321C25d
+```
+
