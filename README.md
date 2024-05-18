@@ -38,7 +38,7 @@ Deployed Addresses
 AccessModule#AccessControlSegregator - 0x9f47daF2343f4329e109dEa0a19E546dD3f2f243
 ```
 
-### 部署`Bridge
+### 部署Bridge
 
 将上一步结果中的地址`0x9f47daF2343f4329e109dEa0a19E546dD3f2f243`作为`deployBridge.js`中的参数。
 
