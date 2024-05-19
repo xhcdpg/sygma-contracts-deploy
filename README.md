@@ -12,7 +12,7 @@
 
 由于Bridge需要一个实现了`IAccessControlSegregator`接口的地址作为参数，即`contracts/utils/AccessControlSegregator.sol`
 
-运行如下命令：
+在sygma-contracts-deploy目录下运行如下命令：
 
 ```
 npx hardhat ignition deploy ./ignition/modules/deployAccessControl.js --network findora
@@ -42,7 +42,7 @@ AccessModule#AccessControlSegregator - 0x9f47daF2343f4329e109dEa0a19E546dD3f2f24
 
 将上一步结果中的地址`0x9f47daF2343f4329e109dEa0a19E546dD3f2f243`作为`deployBridge.js`中的参数。
 
-运行如下命令：
+在sygma-contracts-deploy目录下运行如下命令：
 
 ```
 npx hardhat ignition deploy ./ignition/modules/deployBridge.js --network findora
