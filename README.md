@@ -4,6 +4,13 @@
 
 在`hardhat.config.js`的`networks`中配置链信息
 
+## 编译
+```
+cd sygma-contracts-deploy
+npm install
+npx hardhat compile
+```
+
 ## 部署
 
 部署代码在`ignition/modules/deployAccessControl.js`和`ignition/modules/deployBridge.js`中。
